@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".services.criminal_service.Report_crime">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Name of Accused"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/editText16"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Gender"
+            app:layout_constraintTop_toBottomOf="@+id/editText8"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Merital Status"
+            app:layout_constraintTop_toBottomOf="@+id/editText9"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Height"
+            app:layout_constraintTop_toBottomOf="@+id/editText10"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Weight"
+            app:layout_constraintTop_toBottomOf="@id/editText11"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Hair Color"
+            app:layout_constraintTop_toBottomOf="@id/editText12"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Eyes Color"
+            app:layout_constraintTop_toBottomOf="@+id/editText13"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Scars/Marks/Tatoos"
+            app:layout_constraintTop_toBottomOf="@id/editText14"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Crime"
+            app:layout_constraintTop_toBottomOf="@+id/editText7"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText15"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
