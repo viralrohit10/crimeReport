@@ -32,6 +32,7 @@ import com.example.crimereport.services.save_people.Trafic_accident;
 import com.example.crimereport.services.save_people.UnknownAccident;
 import com.example.crimereport.services.save_people.Victim_support;
 import com.example.crimereport.services.save_people.sos;
+import com.example.crimereport.services.traffic_service.ViewReceipt;
 import com.example.crimereport.services.traffic_service.fine_payment;
 
 import java.sql.Ref;
@@ -125,7 +126,7 @@ public class ServicesFragment extends Fragment {
         view_receipt_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), sos.class);
+                Intent intent = new Intent(getActivity(), ViewReceipt.class);
                 getActivity().startActivity(intent);
             }
         });
@@ -157,31 +158,5 @@ public class ServicesFragment extends Fragment {
         return view;
 
     }
-
-
-
-
-
-
-    @Override
-    public void onCreateOptionsMenu(
-            Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.itemdetail, menu);
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.item2:
-                break;
-
-
-        }
-        return true;
-    }
-
-
-
 
 }

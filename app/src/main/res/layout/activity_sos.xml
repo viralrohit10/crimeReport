@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".services.save_people.sos">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="In emergency pressing the SOS button will trigger an emergency SOS text message"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:lineSpacingExtra="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="52dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:src="@drawable/redsos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="A copy of your Emergency text will be sent to your added contacts."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

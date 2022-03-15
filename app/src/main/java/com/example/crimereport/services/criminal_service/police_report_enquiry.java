@@ -22,5 +22,7 @@ public class police_report_enquiry extends AppCompatActivity {
         getSupportActionBar().setTitle("Police Report Enquiry");
 
 
+
+
     }
 }

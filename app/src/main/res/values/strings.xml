@@ -7,4 +7,5 @@
     <string name="title_media">News</string>
     <string name="title_services">Services</string>
     <string name="sos">SOS</string>
+    <string name="spinner_title" />
 </resources>

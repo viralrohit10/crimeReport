@@ -3,16 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_anonymous_report.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/drawable/circle_image.xml" value="0.152" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/drawable/custom_border.xml" value="0.1665" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/drawable/ic_baseline_camera.xml" value="0.1665" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/drawable/ic_baseline_gallery.xml" value="0.1665" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/drawable/ic_baseline_logout.xml" value="0.1665" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/drawable/ic_baseline_video.xml" value="0.1665" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_add_contact.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_anonymous_report.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_appintro.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_fine_payment.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_info_provide2.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_login.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_main.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_police_report_enquiry.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_policereportenquiry.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_register.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_report_crime.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_sos.xml" value="0.152" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_splash.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_trafic_accident.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_unknown_accident.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_victim_support.xml" value="0.2056434373663959" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/activity_view_receipt.xml" value="0.2056434373663959" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/alert_layout.xml" value="0.2056434373663959" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/app_toolbar.xml" value="0.2056434373663959" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/demo.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/dome2.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/layout/fragment_home.xml" value="0.12183383991894631" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/menu/itemdetail.xml" value="0.2056434373663959" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/menu/menu_home.xml" value="0.2056434373663959" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/crimeReport/app/src/main/res/menu/menu_sos.xml" value="0.25052083333333336" />
       </map>
     </option>
   </component>

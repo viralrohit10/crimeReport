@@ -16,5 +16,7 @@ public class AnonymousReport extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setTitle("Anonymous Report");
+
+
     }
 }

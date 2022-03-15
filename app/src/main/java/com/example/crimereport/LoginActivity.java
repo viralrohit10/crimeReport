@@ -15,14 +15,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnlogin;
+    Button btnlogin,btn;
     TextView textViewReg;
     TextView forgot_pass;
     EditText edtemail,edtpassword;
     FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +35,23 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+//        if (mAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//            finish();
+//        }
+
         btnlogin=findViewById(R.id.btnlogin);
         textViewReg=findViewById(R.id.textReg);
         forgot_pass=findViewById(R.id.forgot_pass);
+
+//        btn=findViewById(R.id.btn);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
         edtemail=findViewById(R.id.email);
         edtpassword=findViewById(R.id.password);
@@ -101,9 +117,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
     }
-
-
 
 
 }

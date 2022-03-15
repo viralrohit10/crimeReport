@@ -13,18 +13,25 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.example.crimereport.services.AddContact;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class HomeFragment extends Fragment {
 
-    Button log,reg;
+    Button log,reg,logout;
     Toolbar toolbar;
     CardView cardView1,cardView2;
     Button button1,button2,button22;
+
+    FirebaseAuth mAuth;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,6 +55,9 @@ public class HomeFragment extends Fragment {
         button2=view.findViewById(R.id.button21);
         button22=view.findViewById(R.id.button22);
 
+        logout=view.findViewById(R.id.logout);
+
+        mAuth = FirebaseAuth.getInstance();
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +75,17 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Toast.makeText(getActivity(), "You are being logged out", Toast.LENGTH_SHORT).show();
+                Intent int1 = new Intent(getActivity(), LoginActivity.class);
+                int1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);//makesure user cant go back
+                startActivity(int1);
+            }
+        });
+
         button22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,62 +93,18 @@ public class HomeFragment extends Fragment {
                 startActivity(i1);
             }
         });
-     //   cardView1= (CardView) view.findViewById(R.id.newscard1);
-      //  cardView2= (CardView) view.findViewById(R.id.newscard2);
 
-
-      /* cardView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i1 = new Intent(getActivity(), MediaFragment.class);
-                startActivity(i1);
-            }
-        });
-
-        cardView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent ii = new Intent(getActivity(),MediaFragment.class);
-                startActivity(ii);
-            }
-        });
-
-
-       */
         log.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(getActivity(), com.example.crimereport.LoginActivity.class);
-                startActivity(i1);
+                if (mAuth.getCurrentUser() != null) {
+                    Toast.makeText(getActivity(), "You are already logged in", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Intent i1 = new Intent(getActivity(), com.example.crimereport.LoginActivity.class);
+                    startActivity(i1);
+                }
             }
-      /*      @Override
-            public void onClick(View view) {
-                AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
-                alertDialog.setTitle("You are ? ");
-                alertDialog.setInverseBackgroundForced(true);
-                String[] items = {"Admin","User"};
-                int checkedItem = 1;
-                alertDialog.setSingleChoiceItems(items, checkedItem, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch (which) {
-                            case 0:
-                                Intent i1 = new Intent(getActivity(), LoginActivity.class);
-                                startActivity(i1);
-                                break;
-                            case 1:
-                                Intent i2 = new Intent(getActivity(), LoginActivity.class);
-                                startActivity(i2);
-                                break;
-                        }
-                    }
-                });
-                AlertDialog alert = alertDialog.create();
-                alert.setCanceledOnTouchOutside(false);
-                alert.show();
-            }
-
-       */
 
         });
 
@@ -153,7 +130,6 @@ public class HomeFragment extends Fragment {
         super.onStop();
         ((AppCompatActivity)getActivity()).getSupportActionBar().show();
     }
-
 
 
 }
